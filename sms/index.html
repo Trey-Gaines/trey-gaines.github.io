@@ -3,44 +3,335 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy</title>
+
+  <title>SMS Opt-In | Trey Gaines Alerts</title>
+  <meta
+    name="description"
+    content="SMS opt-in instructions and consent information for Trey Gaines Alerts."
+  >
+
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
-    h1, h2 { line-height: 1.25; }
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --surface: #f7f7f8;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --link: #0969da;
+      --code-background: #eff1f3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1117;
+        --surface: #161b22;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --border: #30363d;
+        --link: #4493f8;
+        --code-background: #262c36;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 40px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 16px 0;
+    }
+
+    .subtitle {
+      margin-top: 0;
+      color: var(--muted);
+    }
+
+    .card {
+      margin: 24px 0;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .keyword {
+      display: inline-block;
+      padding: 2px 8px;
+      background: var(--code-background);
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 600;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding: 12px 16px;
+      background: var(--surface);
+      border-left: 4px solid var(--border);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    figure {
+      margin: 28px 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
+
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> August 7, 2026</p>
+    <header>
+      <h1>Trey Gaines Alerts — SMS Opt-In</h1>
+      <p class="subtitle">
+        Consent and messaging information for the Trey Gaines Alerts personal
+        automated notification service.
+      </p>
+    </header>
 
-    <p>
-      This messaging service is used to deliver personal website alerts, news alerts,
-      system notifications, and other automated informational notifications.
-    </p>
+    <section>
+      <h2>About the Messaging Service</h2>
 
-    <h2>Mobile Information</h2>
-    <p>
-      Mobile phone numbers, SMS opt-in information, and messaging consent will not be
-      sold, rented, or shared with third parties or affiliates for marketing or
-      promotional purposes.
-    </p>
-    <p>
-      Mobile information is used only to provide, operate, maintain, and support the
-      messaging service described above.
-    </p>
+      <p>
+        Trey Gaines Alerts is a private, non-marketing messaging service used
+        to deliver automated informational alerts from personal applications
+        and monitoring services.
+      </p>
 
-    <h2>SMS Messaging</h2>
-    <p>
-      Users who opt in may receive recurring automated informational SMS messages.
-      Message frequency varies based on triggered events and notifications.
-    </p>
-    <p>Message and data rates may apply.</p>
-    <p>
-      Reply STOP at any time to unsubscribe from SMS messages. Reply HELP for assistance.
-    </p>
+      <p>
+        Messages may include website availability and uptime alerts,
+        application and system events, monitoring notifications, and news
+        alerts based on topics configured by the recipient.
+      </p>
 
-    <p><a href="../">Home</a> · <a href="../terms/">Terms &amp; Conditions</a></p>
+      <p>
+        This service is intended solely for the campaign owner's personal use.
+        It is not offered for public enrollment, and messages are not sent to
+        customers, purchased telephone lists, third parties, or members of the
+        general public.
+      </p>
+    </section>
+
+    <section>
+      <h2>How to Opt In</h2>
+
+      <p>
+        The sole authorized recipient provides explicit consent by manually
+        sending the keyword
+        <span class="keyword">JOIN</span>
+        from their personal mobile phone to:
+      </p>
+
+      <div class="card">
+        <strong>SMS Number:</strong>
+        <a href="sms:+19714317643">+1 971-431-7643</a>
+        <br>
+        <strong>Opt-In Keyword:</strong>
+        <span class="keyword">JOIN</span>
+      </div>
+
+      <p>
+        No automated campaign alert messages are sent to the recipient until
+        the recipient has opted in.
+      </p>
+
+      <p>
+        After <span class="keyword">JOIN</span> is received, the messaging
+        service is configured to send the following confirmation:
+      </p>
+
+      <blockquote>
+        <strong>Trey Gaines Alerts:</strong>
+        You are subscribed to recurring automated personal website, news,
+        application, monitoring, and system alerts. Message frequency varies.
+        Msg &amp; data rates may apply. Reply HELP for help or STOP to
+        unsubscribe.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Message Frequency and Charges</h2>
+
+      <p>
+        Message frequency varies depending on configured website, news,
+        application, monitoring, and system events.
+      </p>
+
+      <p>
+        Message and data rates may apply according to the recipient's wireless
+        carrier and service plan.
+      </p>
+    </section>
+
+    <section>
+      <h2>Opt Out</h2>
+
+      <p>
+        The recipient may unsubscribe at any time by replying
+        <span class="keyword">STOP</span>.
+      </p>
+
+      <p>
+        Additional supported opt-out keywords include:
+      </p>
+
+      <p>
+        <span class="keyword">CANCEL</span>
+        <span class="keyword">END</span>
+        <span class="keyword">OPTOUT</span>
+        <span class="keyword">QUIT</span>
+        <span class="keyword">REVOKE</span>
+        <span class="keyword">STOP</span>
+        <span class="keyword">STOPALL</span>
+        <span class="keyword">UNSUBSCRIBE</span>
+      </p>
+
+      <p>
+        After opting out, the recipient receives:
+      </p>
+
+      <blockquote>
+        <strong>Trey Gaines Alerts:</strong>
+        You have successfully unsubscribed and will receive no further
+        messages. Reply START to resubscribe.
+      </blockquote>
+
+      <p>
+        The recipient may subsequently re-subscribe using
+        <span class="keyword">START</span> or
+        <span class="keyword">UNSTOP</span>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Help</h2>
+
+      <p>
+        The recipient may reply
+        <span class="keyword">HELP</span>
+        or
+        <span class="keyword">INFO</span>
+        for assistance.
+      </p>
+
+      <p>
+        The messaging service is configured to respond:
+      </p>
+
+      <blockquote>
+        <strong>Trey Gaines Alerts:</strong>
+        Help for the personal automated alert service. Msg &amp; data rates may
+        apply. Reply STOP to unsubscribe.
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Messaging Configuration Evidence</h2>
+
+      <p>
+        Consent keyword processing is configured through the Twilio Messaging
+        Service's opt-out management system. The screenshot below shows the
+        configured opt-in, opt-out, and help keywords and their corresponding
+        confirmation messages.
+      </p>
+
+      <figure>
+        <img
+          src="./picture.png"
+          alt="Twilio Messaging Service opt-out management configuration showing JOIN, START, and UNSTOP opt-in keywords, opt-out keywords, HELP and INFO keywords, and their confirmation messages."
+        >
+
+        <figcaption>
+          Figure 1 — Twilio Messaging Service opt-in, opt-out, and help
+          configuration used by Trey Gaines Alerts.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Privacy and Terms</h2>
+
+      <p>
+        Mobile telephone numbers, SMS opt-in information, and messaging consent
+        are not sold, rented, or shared with third parties or affiliates for
+        marketing or promotional purposes.
+      </p>
+
+      <p>
+        <a href="https://trey-gaines.github.io/privacy/">
+          Privacy Policy
+        </a>
+        &nbsp;·&nbsp;
+        <a href="https://trey-gaines.github.io/terms/">
+          Terms and Conditions
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      Trey Gaines Alerts
+    </footer>
   </main>
 </body>
 </html>
