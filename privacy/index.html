@@ -3,44 +3,137 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy</title>
+  <title>Trey Gaines Alerts Privacy Policy</title>
+  <meta
+    name="description"
+    content="Privacy policy for the Trey Gaines Alerts monitoring application and SMS program."
+  >
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --link: #0969da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1117;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --border: #30363d;
+        --link: #4493f8;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
     h1, h2 { line-height: 1.25; }
+    h2 {
+      margin-top: 36px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.25rem;
+    }
+
+    a { color: var(--link); }
+    .updated { color: var(--muted); }
+
+    nav {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> August 7, 2026</p>
+    <h1>Trey Gaines Alerts Privacy Policy</h1>
+    <p class="updated"><strong>Last updated:</strong> August 11, 2026</p>
 
+    <h2>About This Service</h2>
     <p>
-      This messaging service is used to deliver personal website alerts, news alerts,
-      system notifications, and other automated informational notifications.
-    </p>
-
-    <h2>Mobile Information</h2>
-    <p>
-      Mobile phone numbers, SMS opt-in information, and messaging consent will not be
-      sold, rented, or shared with third parties or affiliates for marketing or
-      promotional purposes.
+      Trey Gaines Alerts is a hobbyist-operated monitoring application that
+      sends automated, non-marketing website availability and service-status
+      notifications to invited users who have explicitly subscribed.
     </p>
     <p>
-      Mobile information is used only to provide, operate, maintain, and support the
-      messaging service described above.
+      Users receive alerts only for monitored resources that they selected or
+      administer.
     </p>
 
-    <h2>SMS Messaging</h2>
+    <h2>Information Collected</h2>
     <p>
-      Users who opt in may receive recurring automated informational SMS messages.
-      Message frequency varies based on triggered events and notifications.
-    </p>
-    <p>Message and data rates may apply.</p>
-    <p>
-      Reply STOP at any time to unsubscribe from SMS messages. Reply HELP for assistance.
+      The service may process a subscriber's mobile phone number, SMS opt-in or
+      opt-out status, selected monitoring configuration, and message delivery
+      information needed to operate and support the alert service.
     </p>
 
-    <p><a href="../">Home</a> · <a href="../terms/">Terms &amp; Conditions</a></p>
+    <h2>How Information Is Used</h2>
+    <p>
+      Information is used only to provide, operate, maintain, secure, and
+      support Trey Gaines Alerts. This includes associating a subscriber with
+      selected monitored resources, sending requested alerts, honoring STOP
+      requests, and responding to HELP requests.
+    </p>
+
+    <h2>Mobile Information and SMS Consent</h2>
+    <p>
+      Mobile phone numbers, SMS opt-in information, and messaging consent are
+      not sold, rented, or shared with third parties or affiliates for
+      marketing or promotional purposes.
+    </p>
+    <p>
+      Messaging service providers and wireless carriers may process mobile
+      information only as needed to transmit, deliver, secure, and support the
+      requested messages. SMS consent is specific to Trey Gaines Alerts and is
+      not transferred to another messaging program.
+    </p>
+
+    <h2>SMS Messaging Choices</h2>
+    <p>
+      Invited users subscribe by texting JOIN. Subscribers may reply STOP at
+      any time to unsubscribe and may reply HELP or INFO for assistance.
+      Message frequency varies based on configured monitoring events. Message
+      and data rates may apply.
+    </p>
+
+    <h2>Data Retention</h2>
+    <p>
+      Information is retained only for as long as reasonably necessary to
+      operate the alert service, maintain opt-in and opt-out records, resolve
+      delivery or support issues, and meet applicable legal or compliance
+      obligations.
+    </p>
+
+    <h2>Policy Updates</h2>
+    <p>
+      This policy may be updated to reflect changes to the application or its
+      messaging practices. The current version and its effective date will
+      remain available on this page.
+    </p>
+
+    <nav aria-label="Site navigation">
+      <a href="../">Home</a> ·
+      <a href="../sms/">SMS Program</a> ·
+      <a href="../terms/">Terms &amp; Conditions</a>
+    </nav>
   </main>
 </body>
 </html>
