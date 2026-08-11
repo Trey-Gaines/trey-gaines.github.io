@@ -3,25 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personal Alert Service</title>
-  <meta name="description" content="Personal automated website, news, and system alert service.">
+  <title>Trey Gaines Alerts</title>
+  <meta
+    name="description"
+    content="A hobbyist-operated monitoring application providing automated website availability and service-status alerts to invited users."
+  >
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
-    h1 { line-height: 1.2; }
-    nav a { margin-right: 1rem; }
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --surface: #f7f7f8;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d0d7de;
+      --link: #0969da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0d1117;
+        --surface: #161b22;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --border: #30363d;
+        --link: #4493f8;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-bottom: 8px; font-size: 2.25rem; }
+    h2 { margin-top: 36px; font-size: 1.3rem; }
+    a { color: var(--link); }
+
+    .subtitle {
+      margin-top: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .card {
+      margin: 28px 0;
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 22px;
+      margin-top: 28px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>Personal Alert Service</h1>
-    <p>
-      This site supports a personal automated notification service for website alerts,
-      news alerts, system notifications, and other informational messages.
-    </p>
-    <nav>
+    <header>
+      <h1>Trey Gaines Alerts</h1>
+      <p class="subtitle">
+        Automated website availability and service-status monitoring for invited users.
+      </p>
+    </header>
+
+    <section>
+      <h2>About the Application</h2>
+      <p>
+        Trey Gaines Alerts is a hobbyist-operated monitoring application that
+        sends automated, non-marketing notifications when a configured website
+        or service becomes unavailable, recovers, or reports a status change.
+      </p>
+      <p>
+        Enrollment is limited to invited users. Each user receives alerts only
+        for monitored resources that the user selected or administers.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>SMS Alerts</h2>
+      <p>
+        Invited users must explicitly subscribe before receiving SMS alerts.
+        Message frequency varies according to monitoring events. Message and
+        data rates may apply. Reply STOP to unsubscribe or HELP for assistance.
+      </p>
+      <p>
+        <a href="./sms/">Review SMS program information and opt-in instructions</a>
+      </p>
+    </section>
+
+    <nav aria-label="Program policies">
+      <a href="./sms/">SMS Program</a>
       <a href="./privacy/">Privacy Policy</a>
       <a href="./terms/">Terms &amp; Conditions</a>
     </nav>
+
+    <footer>
+      Trey Gaines Alerts · Hobbyist-operated monitoring application
+    </footer>
   </main>
 </body>
 </html>
